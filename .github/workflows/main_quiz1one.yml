@@ -20,7 +20,7 @@ jobs:
     - name: Set up Python version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.9'
+        python-version: '3.8'
 
     - name: Create and start virtual environment
       run: |
@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'quiz1one'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_28564047b2bc45d7981bc7bf26c9fd7a }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_a9bf243deba746c58973bfb2f654440d }}
