@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz 3 </title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>Krishna Teja Chintala Cheruvu</h1>
+    <h2>1001861564</h2>
+    <h3>Quiz-3</h3>
+</div>
+<div>
+    <table style="border:1px dotted black">
+        <tr style="border:1px dotted black">
+            <th style="border:1px dotted black">Name</th>
+            <th style="border:1px dotted black">Country</th>
+            <th style="border:1px dotted black">Region</th>
+            <th style="border:1px dotted black">Lat</th>
+            <th style="border:1px dotted black">Long</th>
+            <th style="border:1px dotted black">Elev</th>
+        </tr>
+        {% for values in volcano %}
+        <tr style="border:1px dotted black">
+            {% for data in values %}
+            <td style="border:1px dotted black">{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of Volcanos is:</h3>
+    <h5>{{length}}</h5>
+    <h3>Execution time is</h3>
+    <h5>{{times}}</h5>
+    <h3>AVG of Elevation is </h3>
+    <h5>{{avg}}</h5>
+</div>
+</body>
+</html>
