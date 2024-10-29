@@ -15,7 +15,7 @@ driver = '{ODBC Driver 17 for SQL Server}'
 server_name = 'thedomain'
 database_name = 'Krishna'
 username = "itsmekt"
-password = "Krishna@96"
+password = "******"
 server = '{server_name}.database.windows.net,1433'.format(server_name=server_name)
 string_connection = textwrap.dedent('''
     Driver={driver};
